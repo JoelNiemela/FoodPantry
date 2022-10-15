@@ -11,4 +11,6 @@ return [
 	route('products', '(?<product_id>\d+)') => 'product@show',
 	route('brands') => 'product_brand',
 	route('brands', '(?<product_brand_id>\d+)') => 'product_brand@show',
+	route('brands', 'new') => 'product_brand@new',
+	route('brands', 'create') => 'product_brand@create',
 ];
