@@ -12,6 +12,7 @@
     </a>
     <br>
 <?php endforeach ?>
+<hr>
 <a href="../products">Back to all products</a>
 <br>
 </body>
