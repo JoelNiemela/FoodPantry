@@ -10,4 +10,3 @@ CREATE TABLE product_brand (
 
 --@Down
 DROP TABLE product_brand;
-
