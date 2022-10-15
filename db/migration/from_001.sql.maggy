@@ -1,0 +1,12 @@
+--@Version 1 "Create 'product' table."
+
+--@Up
+CREATE TABLE product (
+    product_id INTEGER PRIMARY KEY,
+    product_name TEXT,
+    in_stock INTEGER,
+    max_storage INTEGER,
+);
+
+--@Down
+DROP TABLE product;
