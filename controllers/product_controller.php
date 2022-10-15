@@ -16,4 +16,8 @@ class ProductController {
             'brands' => ProductBrand::where(['product_id' => $product_id]),
         ]);
 	}
+
+    function new() {
+        view('Product/new.php');
+    }
 }

@@ -11,5 +11,7 @@
     </a>
     <br>
 <?php endforeach ?>
+<hr>
+<a href="products/new">Add a new product</a>
 </body>
 </html>
