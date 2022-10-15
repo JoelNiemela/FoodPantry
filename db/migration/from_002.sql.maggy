@@ -1,0 +1,13 @@
+--@Version 3 "Create 'product_brand' table."
+
+--@Up
+CREATE TABLE product_brand (
+    product_brand_id INTEGER PRIMARY KEY,
+    product_id INTEGER,
+    brand_name TEXT,
+    FOREIGN KEY (product_id) REFERENCES product(product_id)
+);
+
+--@Down
+DROP TABLE product_brand;
+
