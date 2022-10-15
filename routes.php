@@ -9,6 +9,7 @@ return [
 	route('products', 'new') => 'product@new',
 	route('products', 'create') => 'product@create',
 	route('products', '(?<product_id>\d+)') => 'product@show',
+	route('products', '(?<product_id>\d+)', 'restock') => 'product@restock',
 	route('brands') => 'product_brand',
 	route('brands', '(?<product_brand_id>\d+)') => 'product_brand@show',
 	route('brands', 'new') => 'product_brand@new',

@@ -7,7 +7,7 @@
 <label>Max Storage: </label><?= $product->max_storage ?><br>
 <label>In Stock: </label><?= $product->in_stock ?><br>
 <h2>Restock Items:</h2>
-<form action="<?= $product->product_id ?>/stock" method="POST">
+<form action="<?= $product->product_id ?>/restock" method="POST">
     <label>Amount: </label><input type="number" name="amount"><br>
     <br>
     <input type="submit">
