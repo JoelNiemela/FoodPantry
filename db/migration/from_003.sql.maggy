@@ -2,7 +2,7 @@
 
 --@Up
 CREATE TABLE brand_price (
-    brand_price_id INTEGER PRIMARY KEY,
+    brand_price_id INTEGER AUTO_INCREMENT PRIMARY KEY,
     product_brand_id INTEGER,
     price DECIMAL(18, 2),
     time TIMESTAMP,

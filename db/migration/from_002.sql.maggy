@@ -2,7 +2,7 @@
 
 --@Up
 CREATE TABLE product_brand (
-    product_brand_id INTEGER PRIMARY KEY,
+    product_brand_id INTEGER AUTO_INCREMENT PRIMARY KEY,
     product_id INTEGER,
     brand_name TEXT,
     FOREIGN KEY (product_id) REFERENCES product(product_id)

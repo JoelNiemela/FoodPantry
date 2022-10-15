@@ -2,7 +2,7 @@
 
 --@Up
 CREATE TABLE product (
-    product_id INTEGER PRIMARY KEY,
+    product_id INTEGER AUTO_INCREMENT PRIMARY KEY,
     product_name TEXT,
     in_stock INTEGER,
     max_storage INTEGER
