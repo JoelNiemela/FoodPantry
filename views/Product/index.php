@@ -3,6 +3,7 @@
 <head>
 </head>
 <body>
+<a href="../root.php">Home</a>
 <h1>All Product</h1>
 <?php foreach ($products as $product): ?>
     <a href="products/<?= $product->product_id ?>">
