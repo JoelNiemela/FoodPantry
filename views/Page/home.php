@@ -12,5 +12,12 @@
     <br>
     <input type="submit">
 </form>
+<h2>Products with least items in storage</h2>
+<?php foreach ($products_with_lowest_storage as $product): ?>
+    <a href="root.php/products/<?= $product->product_id ?>">
+        <?= $product->product_name ?>: <?= $product->in_stock ?>
+    </a>
+    <br>
+<?php endforeach ?>
 </body>
 </html>
