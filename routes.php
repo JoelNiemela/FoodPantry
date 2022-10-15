@@ -6,4 +6,5 @@ return [
 	route() => 'page',
 	route('home') => 'page',
 	route('products') => 'product',
+	route('products', '(?<product_id>\d+)') => 'product@show',
 ];
