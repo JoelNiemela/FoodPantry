@@ -12,6 +12,8 @@
     </a>
     <br>
 <?php endforeach ?>
+<br>
+<a href="../brands/new?product_id=<?= $product->product_id ?>">Add a new brand for this product</a>
 <hr>
 <a href="../products">Back to all products</a>
 <br>
