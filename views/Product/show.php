@@ -4,6 +4,7 @@
 </head>
 <body>
 <h1><?= $product->product_name ?></h1>
+<label>Max Storage: </label><?= $product->max_storage ?>
 <h2>Brands:</h2>
 <?php foreach ($brands as $brand): ?>
     <a href="../brands/<?= $brand->product_brand_id ?>">

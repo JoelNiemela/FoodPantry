@@ -20,4 +20,12 @@ class ProductController {
     function new() {
         view('Product/new.php');
     }
+
+    function create() {
+        $product = Product::new([
+            'product_name' => $_POST['product_name'],
+            'max_storage' => intval($_POST['max_storage']),
+        ]);
+        header("Location: ./{$product->product_id}");
+    }
 }
