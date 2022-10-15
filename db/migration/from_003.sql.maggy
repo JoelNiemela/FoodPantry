@@ -1,0 +1,13 @@
+--@Version 4 "Create 'brand_price' table."
+
+--@Up
+CREATE TABLE brand_price (
+    brand_price_id INTEGER PRIMARY KEY,
+    product_brand_id INTEGER,
+    price DECIMAL(18, 2),
+    time TIMESTAMP,
+    FOREIGN KEY (product_brand_id) REFERENCES product_brand(product_brand_id)
+);
+
+--@Down
+DROP TABLE brand_price;
