@@ -19,7 +19,7 @@ class PageController {
     function subtract() {
         foreach (Product::all() as $product) {
             $product->update([
-                'in_stock' => $product->in_stock - intval($_POST['amount']),
+                'in_stock' => max(0, $product->in_stock - intval($_POST['amount'])),
             ]);
         }
         header("Location: ..");
