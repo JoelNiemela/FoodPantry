@@ -5,6 +5,7 @@ require LUCID . 'routing.php';
 return [
 	route() => 'page',
 	route('home') => 'page',
+	route('subtract') => 'page@subtract',
 	route('products') => 'product',
 	route('products', 'new') => 'product@new',
 	route('products', 'create') => 'product@create',
