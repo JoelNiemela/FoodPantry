@@ -15,7 +15,15 @@ class ProductController {
             'product' => Product::find(['product_id' => $product_id]),
             'brands' => ProductBrand::where(['product_id' => $product_id]),
         ]);
-	}
+    }
+
+    function restock(int $product_id) {
+        $product = Product::find(['product_id' => $product_id]);
+        $product->update([
+            'in_stock' => $product->in_stock + intval($_POST['amount']),
+        ]);
+        header("Location: ../{$product->product_id}");
+    }
 
     function new() {
         view('Product/new.php');
